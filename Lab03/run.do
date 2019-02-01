@@ -10,7 +10,7 @@ view wave
 
 #Adding all three signals
 add wave sim:/tb/a
-add wave sim:/tb/b
+add wave sim:/tb/b	
 add wave sim:/tb/c
 add wave sim:/tb/o
 

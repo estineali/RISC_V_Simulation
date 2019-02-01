@@ -6,7 +6,7 @@ module MUX
 	output reg[63:0] o
 );
 
-	always @ (s)
+	always @ (s or a or b)
 	begin
 		if (s)
 			o <= a;

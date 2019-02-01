@@ -26,9 +26,7 @@ module tb
 
 	initial
 	begin
-	 c = 1'b0;
-	a = 64'hFF;
-	b = 64'hcc;
+	# 104 b = 64'h34;
 	end 
 	
 	initial
