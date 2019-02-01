@@ -30,5 +30,6 @@ module tb
 	end 
 	
 	initial
+
 	$monitor("Time = ", $time, "---> Output = %d", o);
 endmodule 
