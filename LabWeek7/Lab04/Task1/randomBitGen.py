@@ -1,9 +1,9 @@
 import random
 
-x = "Registers"
-bitlen = 5
+x = "Storage"
+bitlen = 8
 
-for i in range(32):
+for i in range(16):
 	x += "[" + str(i) + "] <= " + str(bitlen) + "'b"
 	for j in range(bitlen):
 
@@ -13,4 +13,4 @@ for i in range(32):
 		x += str(a)
 	x += ";"
 	print(x)
-	x = "Registers"
+	x = "Storage"
