@@ -1,16 +1,22 @@
 import random
+array_name = "Registers" ##Name of array of registers 
 
-x = "Storage"
-bitlen = 8
+register_len = 64 ##size of each register in that array
+file_len = 32 ## Number of registers in the array
+number_systems = {2 : ["'b", 2], 8 : ["'o", 8], 10 : ["'d", 10], 16 : ["'h", 16]} ##Work in progress
 
-for i in range(16):
-	x += "[" + str(i) + "] <= " + str(bitlen) + "'b"
-	for j in range(bitlen):
+selected_base = 2 ## a part of the work in progrss.
 
-		a = (random.randint(0, 10000000)) % 2
+
+##Dont Bother with the Code Below.
+for i in range(file_len):
+	
+	x = array_name + "[" + str(i) + "] <= " + str(register_len) + number_systems[selected_base][0]
+	
+	for j in range(register_len):
+		temp = random.randint(0, 1000) % number_systems[selected_base][1]
 		if i == 0:
-			a = 0
-		x += str(a)
+			temp = 0
+		x += str(temp)
 	x += ";"
 	print(x)
-	x = "Storage"

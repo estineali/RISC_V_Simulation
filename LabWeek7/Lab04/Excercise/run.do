@@ -1,6 +1,6 @@
 
 #Compilation
-vlog tb.v RegisterFile.v
+vlog tb.v RegisterFile.v instruction_parser.v top.v
 
 #Opening
 vsim -novopt work.tb
@@ -10,13 +10,7 @@ view wave
 
 #Adding all three signals
 add wave \
-{sim:/tb/clk } \
-{sim:/tb/rs1 } \
-{sim:/tb/rs2 } \
-{sim:/tb/rd } \
-{sim:/tb/WriteData } \
-{sim:/tb/reset } \
-{sim:/tb/RegWrite } \
+{sim:/tb/instruction } \
 {sim:/tb/ReadData1 } \
 {sim:/tb/ReadData2 } 
 
