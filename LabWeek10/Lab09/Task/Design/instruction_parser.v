@@ -16,11 +16,5 @@ module instruction_parser
 		rd <= instruction[11:7];
 		opcode <= instruction[6:0];	
 	end
-
-
-
-
-
-
 	
 endmodule
