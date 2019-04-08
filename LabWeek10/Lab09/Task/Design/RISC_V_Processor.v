@@ -135,7 +135,7 @@ module RISC_V_Processor (
 		//MUX
 	always @(MemToReg) 
 	begin
-		if (MemToReg == 1'b1)
+		if (MemToReg == 1'b0)
 			WriteData <= Read_Data; 
 		else 
 			WriteData <= Result;
