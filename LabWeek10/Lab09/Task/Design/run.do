@@ -9,9 +9,7 @@ vsim -novopt work.tb
 view wave
 
 #Adding all signals
-add wave \
-{sim:/tb/clk } \
-{sim:/tb/reset }
+do wave.do
 
 
 #Switch-on. Run. 

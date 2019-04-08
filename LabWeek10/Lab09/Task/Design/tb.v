@@ -1,9 +1,8 @@
 module tb (
 );
 
-	reg clk;
-	reg reset; 
-
+	reg clk, reset;
+	
 	RISC_V_Processor r5
 	(
 		.clk(clk),
@@ -11,9 +10,10 @@ module tb (
 	);
 
 	initial 
-	begin : 
-		clk <= 1'b0;
-		reset <= 1'b0;
+	begin 
+		clk <= 1'b1;
+		reset <= 1'b1;
+		#10 reset <= 1'b0;
 	end
 
 	always

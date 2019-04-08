@@ -8,7 +8,7 @@ module instruction_parser
 	output reg [4:0] rd,
 	output reg [6:0] opcode
 );
-	always @(instruction) begin : 
+	always @(instruction) begin
 		funct7 <= instruction[31:25];
 		rs2 <= instruction[24:20];
 		rs1 <= instruction[19:15];

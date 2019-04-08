@@ -10,8 +10,8 @@ module Instruction_memory
 	begin
 		instructions[0] <= 8'b10000011;
 		instructions[1] <= 8'b00110100;
-		instructions[2] <= 8'b00000101;
-		instructions[3] <= 8'b00001111;
+		instructions[2] <= 8'b10000101;
+		instructions[3] <= 8'b00000010;
 		instructions[4] <= 8'b10110011;
 		instructions[5] <= 8'b10000100;
 		instructions[6] <= 8'b10011010;
@@ -21,9 +21,9 @@ module Instruction_memory
 		instructions[10] <= 8'b00010100;
 		instructions[11] <= 8'b00000000;
 		instructions[12] <= 8'b00100011;
-		instructions[13] <= 8'b00111000;
+		instructions[13] <= 8'b00110100;
 		instructions[14] <= 8'b10010101;
-		instructions[15] <= 8'b00001110;
+		instructions[15] <= 8'b00000010;
 	end
 
 	always @( Inst_Address )
